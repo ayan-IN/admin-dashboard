@@ -1,0 +1,25 @@
+body,
+html {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+div {
+  border: 1px solid black;
+}
+.main-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.content-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.project-card {
+  width: 300px;
+}
