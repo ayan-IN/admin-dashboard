@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+
+body,
+html {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.main-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+/* Side-Bar */
+.sidebar-container {
+  background-color: #1a92d3;
+  color: white;
+}
+.sidebar-container .dashboard-title {
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 30px;
+}
+.sidebar-container .dashboard-title > div > img {
+  width: 40px;
+}
+.sidebar-container .group-1 {
+  margin: 30px;
+}
+.sidebar-container .group-2 {
+  margin: 30px;
+}
+.sidebar-container .group-1 > div,
+.sidebar-container .group-2 > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px;
+}
+.sidebar-container .group-1 > div > div > img,
+.sidebar-container .group-2 > div > div > img {
+  width: 20px;
+}
+/* Top Bar */
+.topbar-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+.topbar-container .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+.topbar-container .search-bar img {
+  width: 25px;
+}
+.topbar-container .search-bar input {
+  max-width: 600px;
+  width: 100%;
+  background-color: #e2e8f0;
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 50px;
+  padding: 0px 20px;
+}
+.topbar-container > div {
+  display: flex;
+  justify-content: space-between;
+}
+.topbar-container .quick-action {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.topbar-container .quick-action img {
+  width: 20px;
+}
+.topbar-container .quick-action .logged-user img {
+  width: 50px;
+  border-radius: 100%;
+}
+.topbar-container .welcome-section {
+  display: flex;
+  align-items: center;
+}
+.topbar-container .welcome-section .quick-buttons{
+  display: flex;
+  gap: 25px;
+}
+.topbar-container .welcome-section .quick-buttons > button {
+  background-color: #1a92d3;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+.topbar-container .welcome-section .welcome-note {
+  display: flex;
+  gap: 30px;
+}
+.topbar-container .welcome-section .salutation p{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.topbar-container .welcome-section .salutation >div{
+  font-weight: 600;
+  font-size: 18px;
+}
+.topbar-container .welcome-section .welcome-note > div > img {
+  width: 80px;
+  border-radius: 100%;
+}
+/* Main-Content-Section */
+.content-container {
+  display: grid;
+  grid-template-columns: 3.5fr 1.5fr;
+  background-color: #e2e8f0;
+  padding: 30px;
+}
+.project-main-container {
+}
+.project-main-container .head-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 15px;
+}
+.project-card {
+  width: 300px;
+  height: max-content;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 8px solid #f0b42a;
+}
+.project-card .head-text {
+  font-weight: 600;
+}
+.project-card p {
+  font-weight: 300;
+}
+.project-card .card-actions {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+.project-card .card-actions > div > img {
+  width: 20px;
+}
+
+/* Announcements-Section */
+.announcements .head-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.announcements .announcemnet-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+.announcements .announcemnet-card > div {
+  font-weight: 500;
+}
+.announcements .announcemnet-card p {
+  font-weight: 300;
+  font-size: 13px;
+}
+/* Trending-Section */
+.trending .head-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.trending .trending-container {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+}
+.trending .trending-container .trend-image img {
+  width: 50px;
+  border-radius: 100%;
+}
+.trending .trending-container .trend {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.trending .trending-container .trend p {
+  font-size: 12px;
+}
